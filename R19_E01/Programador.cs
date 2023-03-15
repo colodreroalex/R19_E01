@@ -77,7 +77,7 @@ namespace R19_E01
         public virtual float Salario
         {
             //Modificar el GET para que devuelva el salario incrementado en un 10%
-                //Virtual
+                //Virtual --> Se puede sobreescribir
             get { return _salario;  }
             set 
             {
@@ -146,6 +146,20 @@ namespace R19_E01
             if (paga > SALARIO_MAX)
                 throw new Exception($"ERROR: El salario es superior a {SALARIO_MAX}");
         }
+
+        public override string ToString()
+        {
+
+            string cadena;
+
+            cadena = "DATOS PROGRAMADOR\n";
+            cadena += $"Nombre: {Nombre}\n";
+            cadena += $"Apellidos: {Apellidos}\n";
+            cadena += $"Salario: {Salario}\n";
+
+            return cadena; 
+        }
+
         #endregion
 
     }
