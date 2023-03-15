@@ -10,8 +10,8 @@
             pepe.Salario = 1500;
 
             ProgramadorJunior yo = new ProgramadorJunior();
-            yo.Nombre = "Tontito";
-            yo.Apellidos = "Master";
+            yo.Nombre = "ales";
+            yo.Apellidos = "colo";
             yo.Salario = 600f;
             yo.Bonus = 1000; 
 
